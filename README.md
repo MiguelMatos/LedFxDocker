@@ -1,10 +1,5 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/spirocekano/ledfx-virt?logo=docker&style=flat-square)](https://hub.docker.com/r/spirocekano/ledfx-virt)
-[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/spirocekano/ledfx-virt?logo=docker&style=flat-square)](https://hub.docker.com/r/spirocekano/ledfx-virt)
-[![Docker OS/ARCH](https://img.shields.io/badge/linux%2Famd64-yes-green)](https://hub.docker.com/r/spirocekano/ledfx-virt/tags)
-[![Docker OS/ARCH](https://img.shields.io/badge/linux%2Farmv7-yes-green)](https://hub.docker.com/r/spirocekano/ledfx-virt/tags)
 
-
-This is fork from [LedFxDocker](https://github.com/ShiromMakkad/LedFxDocker)
+This is fork from [LedFxDocker-Virtual](https://github.com/spiro-c/LedFxDocker-Virtual)
 
 # LedFxDocker
 A Docker Image for the latest developement branch of [LedFx](https://github.com/LedFx/LedFx.git). 
@@ -22,7 +17,7 @@ version: '3'
 
 services:
   ledfx-virt:
-    image: spirocekano/ledfx-virt
+    image: MiguelMatos/ledfx
     container_name: ledfx-virt
     hostname: ledfx-virt
     environment: 
@@ -82,6 +77,6 @@ If you want to make local modifications to this image for development purposes o
 ```
 git clone https://github.com/spiro-c/LedFxDocker.git -b Virtuals
 cd LedFxDocker
-docker build -t spirocekano/ledfx-virt .
+docker build -t MiguelMatos/ledfx .
 ```
  

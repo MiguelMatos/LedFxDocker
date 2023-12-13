@@ -50,7 +50,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ENV PATH="/LedFx/venv/bin:$PATH"
 
 # Copy LedFx requirements from Github
-RUN wget -q -O /LedFx/requirements.txt https://raw.githubusercontent.com/LedFx/LedFx/dev/requirements.txt
+RUN wget -q -O /LedFx/requirements.txt https://raw.githubusercontent.com/LedFx/LedFx/v2.0.80/requirements.txt
 
 #Install LedFx requirements build the wheel's and delete test *.pyc *.pyo files from venv for smaller final image
 RUN /LedFx/venv/bin/pip install --no-cache-dir -r requirements.txt \
